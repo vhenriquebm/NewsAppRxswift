@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336CED2B28DC84E400C2D6C5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336CED2A28DC84E400C2D6C5 /* Article.swift */; };
+		336CED2E28DC8A3600C2D6C5 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336CED2D28DC8A3500C2D6C5 /* NewsTableViewCell.swift */; };
+		336CED3028DC937B00C2D6C5 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336CED2F28DC937B00C2D6C5 /* URLRequest+Extensions.swift */; };
 		42EAC20428DBDCED0031CB0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EAC20328DBDCED0031CB0A /* AppDelegate.swift */; };
 		42EAC20628DBDCED0031CB0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EAC20528DBDCED0031CB0A /* SceneDelegate.swift */; };
-		42EAC20828DBDCED0031CB0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EAC20728DBDCED0031CB0A /* ViewController.swift */; };
+		42EAC20828DBDCED0031CB0A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EAC20728DBDCED0031CB0A /* HomeViewController.swift */; };
 		42EAC20B28DBDCED0031CB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EAC20928DBDCED0031CB0A /* Main.storyboard */; };
 		42EAC20D28DBDCEF0031CB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EAC20C28DBDCEF0031CB0A /* Assets.xcassets */; };
 		42EAC21028DBDCEF0031CB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EAC20E28DBDCEF0031CB0A /* LaunchScreen.storyboard */; };
+		42EAC21928DBDD1B0031CB0A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 42EAC21828DBDD1B0031CB0A /* RxCocoa */; };
+		42EAC21B28DBDD1B0031CB0A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42EAC21A28DBDD1B0031CB0A /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		336CED2A28DC84E400C2D6C5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		336CED2D28DC8A3500C2D6C5 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		336CED2F28DC937B00C2D6C5 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
 		42EAC20028DBDCED0031CB0A /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EAC20328DBDCED0031CB0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42EAC20528DBDCED0031CB0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		42EAC20728DBDCED0031CB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42EAC20728DBDCED0031CB0A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		42EAC20A28DBDCED0031CB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42EAC20C28DBDCEF0031CB0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42EAC20F28DBDCEF0031CB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,12 +39,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EAC21B28DBDD1B0031CB0A /* RxSwift in Frameworks */,
+				42EAC21928DBDD1B0031CB0A /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		336CED2C28DC84E700C2D6C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				336CED2A28DC84E400C2D6C5 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		336CED3128DCA0D500C2D6C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				336CED3428DCA10A00C2D6C5 /* Storyboard */,
+				336CED3528DCA11500C2D6C5 /* Controller */,
+				336CED3328DCA10100C2D6C5 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		336CED3228DCA0E000C2D6C5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				42EAC20528DBDCED0031CB0A /* SceneDelegate.swift */,
+				42EAC20328DBDCED0031CB0A /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		336CED3328DCA10100C2D6C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				336CED2D28DC8A3500C2D6C5 /* NewsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		336CED3428DCA10A00C2D6C5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				42EAC20928DBDCED0031CB0A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		336CED3528DCA11500C2D6C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42EAC20728DBDCED0031CB0A /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		336CED3628DCA14300C2D6C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				336CED2F28DC937B00C2D6C5 /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		42EAC1F728DBDCED0031CB0A = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +125,10 @@
 		42EAC20228DBDCED0031CB0A /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				42EAC20328DBDCED0031CB0A /* AppDelegate.swift */,
-				42EAC20528DBDCED0031CB0A /* SceneDelegate.swift */,
-				42EAC20728DBDCED0031CB0A /* ViewController.swift */,
-				42EAC20928DBDCED0031CB0A /* Main.storyboard */,
+				336CED3228DCA0E000C2D6C5 /* Application */,
+				336CED3128DCA0D500C2D6C5 /* View */,
+				336CED2C28DC84E700C2D6C5 /* Model */,
+				336CED3628DCA14300C2D6C5 /* Extensions */,
 				42EAC20C28DBDCEF0031CB0A /* Assets.xcassets */,
 				42EAC20E28DBDCEF0031CB0A /* LaunchScreen.storyboard */,
 				42EAC21128DBDCEF0031CB0A /* Info.plist */,
@@ -83,6 +152,10 @@
 			dependencies = (
 			);
 			name = NewsApp;
+			packageProductDependencies = (
+				42EAC21828DBDD1B0031CB0A /* RxCocoa */,
+				42EAC21A28DBDD1B0031CB0A /* RxSwift */,
+			);
 			productName = NewsApp;
 			productReference = 42EAC20028DBDCED0031CB0A /* NewsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +184,9 @@
 				Base,
 			);
 			mainGroup = 42EAC1F728DBDCED0031CB0A;
+			packageReferences = (
+				42EAC21728DBDD1B0031CB0A /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 42EAC20128DBDCED0031CB0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +214,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42EAC20828DBDCED0031CB0A /* ViewController.swift in Sources */,
+				42EAC20828DBDCED0031CB0A /* HomeViewController.swift in Sources */,
 				42EAC20428DBDCED0031CB0A /* AppDelegate.swift in Sources */,
+				336CED2E28DC8A3600C2D6C5 /* NewsTableViewCell.swift in Sources */,
 				42EAC20628DBDCED0031CB0A /* SceneDelegate.swift in Sources */,
+				336CED3028DC937B00C2D6C5 /* URLRequest+Extensions.swift in Sources */,
+				336CED2B28DC84E400C2D6C5 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +437,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42EAC21728DBDD1B0031CB0A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42EAC21828DBDD1B0031CB0A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42EAC21728DBDD1B0031CB0A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		42EAC21A28DBDD1B0031CB0A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42EAC21728DBDD1B0031CB0A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42EAC1F828DBDCED0031CB0A /* Project object */;
 }
